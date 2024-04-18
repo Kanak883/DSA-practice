@@ -324,5 +324,49 @@ int main(){
 
 
 }
+pattern 12:
+1        1
+12      21
+123    321
+1234  4321
+1234554321
+
+#include <iostream>
+using namespace std;
+
+int main(){
+
+	int n = 5;
+	for(int i = 1; i < n; i++){
+
+		//print1
+		for(int j=1; j <=i; j++){
+			cout << j;
+		}
+
+		//spaces
+		for(int j = 1; j <= n-i; j++){
+			cout << " ";
+		}
+
+		//spaces
+		for(int j = 1; j <= n-i; j++){
+			cout << " ";
+		}
+		//print2
+		for(int j=1; j <=i; j++){
+			cout << i-j+1;
+		}
+	cout << endl;
+	}
+	for(int j=1; j <=n; j++){
+		cout << j;
+	}
+	for(int j=1; j <=n; j++){
+		cout << n-j+1;
+	}
+
+
+}
 
 
